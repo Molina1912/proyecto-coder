@@ -140,6 +140,86 @@ html, body {
   object-fit: cover;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
+.Somos .card-presentacion {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.Somos .card-presentacion:hover {
+  transform: translateY(-5px);
+}
+
+.Somos .card-presentacion h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #222;
+  text-align: center;
+}
+
+.Somos .card-presentacion p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.Somos .card-presentacion a {
+  background-color: forestgreen;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.Somos .card-presentacion a:hover {
+  background-color: darkgreen;
+  transform: scale(1.05);
+}
+.Somos .card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.Somos .card-presentacion {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.Somos .card-presentacion:hover {
+  transform: translateY(-5px);
+}
+
+.Somos .card-presentacion h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #222;
+  font-weight: 600;
+}
+
+.Somos .card-presentacion p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
 
 @media (max-width: 768px) {
   .Somos {
@@ -164,6 +244,7 @@ html, body {
 }
 
 /*/---------------SERVICIOS--------------*/  
+
 .Services {
   text-align: center;
   padding: 80px 20px;
@@ -321,7 +402,255 @@ html, body {
   padding: 2rem;
 }
 
+/* Mejora visual para la sección de Servicios (cards) */
+.servicios-destacados {
+  background-color: #f7f7f7;
+  padding: 60px 20px;
+}
 
+.servicio-card {
+  border: none;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.servicio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.servicio-card img {
+  height: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 12px 0 0 12px;
+}
+
+.servicio-card .card-body {
+  padding: 2rem;
+}
+
+.servicio-card h3 {
+  font-size: 1.8rem;
+  color: forestgreen;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.servicio-card p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.servicio-card a.btn {
+  background-color: forestgreen;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.servicio-card a.btn:hover {
+  background-color: darkgreen;
+  transform: scale(1.05);
+}
+
+/* Ajuste para la imagen en reverse row */
+.servicio-card .flex-md-row-reverse img {
+  border-radius: 0 12px 12px 0;
+}
+
+@media (max-width: 768px) {
+  .servicio-card img {
+    border-radius: 12px 12px 0 0;
+    max-height: 250px;
+  }
+}
+
+.servicio-card img {
+  width: 100%;
+  height: 280px;         /* puedes ajustar este valor */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.servicios-intro {
+  padding-top: 140px;
+  padding-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  .servicios-intro {
+    padding-top: 120px;
+  }
+}
+.servicios-intro {
+  padding-top: 140px;
+  padding-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  .servicios-intro {
+    padding-top: 120px;
+  }
+}
+.servicios-intro h1 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.servicios-intro p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.servicios-intro .btn {
+  margin-top: 1rem;
+}
+
+
+
+/*/---------------PORTAFOLIO--------------*/  
+
+.Portfolio {
+  padding: 80px 20px;
+  background-color: #333;
+  text-align: center;
+}
+
+.portfolio-header {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+}
+
+.Portfolio h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: black;
+  font-weight: 600;
+}
+
+.Portfolio p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.portfolio-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 40px;
+}
+
+.portfolio-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.portfolio-card h3 {
+  font-size: 22px;
+  margin: 15px 0;
+  color: #333;
+}
+
+.portfolio-card .subtitle {
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.portfolio-card p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.4;
+  flex-grow: 1;
+}
+
+.portfolio-card a {
+  display: inline-block;
+  background-color: forestgreen;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-top: 20px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.portfolio-card a:hover {
+  background-color: darkgreen;
+  transform: scale(1.05);
+}
+
+
+.btn-contact-green {
+  display: inline-block;
+  background-color: forestgreen;
+  color: forestgreen;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-contact-green:hover {
+  background-color: darkgreen;
+  transform: scale(1.05);
+  color: rgb(10, 165, 13);
+}
+
+@media (max-width: 768px) {
+  .btn-contact-green {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 1.1rem;
+  }
+}
+
+  .portfolio-card img {
+    height: 180px;
+  }
+
+  .btn-black-contact {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 1.1rem;
+  }
 /*/---------------PORTAFOLIO--------------*/  
 .Portfolio {
   padding: 80px 20px;
@@ -427,6 +756,50 @@ html, body {
     height: 180px;
   }
 }
+.btn-black-contact {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-black-contact:hover {
+  background-color: #333;
+  transform: scale(1.05);
+  color: white;
+}
+
+.btn-black-contact {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-black-contact:hover {
+  background-color: #333;
+  transform: scale(1.05);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .btn-black-contact {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 1.1rem;
+  }
+}
+
 
 /*/---------------MARCAS--------------*/  
 .Marcas {
@@ -506,39 +879,44 @@ html, body {
   transform: scale(1.05);
 }
 
-/*/---------------FORMULARIO--------------*/  
-.contacto-form label {
-  display: block;
-  margin-top: 10px;
+/*/---------------FORMULARIO--------------*/ 
+.contact-form {
+  max-width: 400px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+
+.contact-form .form-label {
   font-weight: 600;
+  color: #222;
 }
 
-.contacto-form textarea {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-size: 16px;
-  font-family: inherit;
-  resize: vertical;
-}
-
-.contacto-form button {
-  margin-top: 15px;
+.contact-form .input-group-text {
   background-color: forestgreen;
   color: white;
   border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
 }
 
-.contacto-form button:hover {
-  background-color: forestgreen;
+.contact-form .form-control:focus {
+  border-color: forestgreen;
+  box-shadow: 0 0 0 0.2rem rgba(34, 139, 34, 0.25);
 }
+
+.contact-form .btn-success {
+  background-color: forestgreen;
+  border: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-form .btn-success:hover {
+  background-color: darkgreen;
+  transform: scale(1.02);
+}
+
 /*/---------------UBICACION--------------*/  
 .Ubicacion {
   text-align: center;
@@ -560,6 +938,20 @@ html, body {
   border-radius: 0;
   display: block;
 }
+.mapa-container {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mapa-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 /*/---------------WHATSAPP--------------*/  
 .whatsapp {
   position: fixed;

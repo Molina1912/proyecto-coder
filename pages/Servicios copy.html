@@ -7,8 +7,6 @@
   <link rel="stylesheet" href="../css/styles.css">
   <title>TECH CONNECT</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
 </head>
 
@@ -16,7 +14,7 @@
   <header>
     <nav class="navbar navbar-expand-lg bg-light fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">
+        <a class="navbar-brand" href="#">
           <img src="../img/Logo_header_black.png" alt="TECH CONNECT" height="80">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas"
@@ -43,70 +41,33 @@
       </div>
     </nav>
   </header>
-  <main class="mt-5 pt-4">
-    <section class="container my-5 py-4 bg-white rounded shadow">
-      <h1 class="text-center mb-3">Formulario de Contacto</h1>
-      <h2 class="text-center mb-4 fs-5 text-muted">
-        Puedes contactarnos a través del formulario. Si tienes una emergencia,
-        por favor marca la casilla y te daremos prioridad.
-      </h2>
+  <main>
+    <section class="content-section">
+      <h2>Medios de Contacto</h2>
+      <p>
+        Puedes contactarnos a través de los siguientes medios:
+      </p>
+      <ul>
+        <li>Teléfono: +56 9 1234 5678</li>
+        <li>Email: contacto@techconnect.cl</li>
+        <li>Dirección: Los Talaveras 45, Ñuñoa, Santiago</li>
+      </ul>
+      <p>O Escribanos a traves del formulario de contacto:</p>
 
-      <form action="#" method="post" class="contact-form mx-auto p-4" style="max-width: 500px;">
-        <div class="mb-3">
-          <label for="name" class="form-label">Nombre</label>
-          <div class="input-group">
-            <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
-            <input type="text" class="form-control" id="name" name="name" placeholder="Tu Nombre" required>
-          </div>
-        </div>
+      <form action="#" method="post" class="contact-form">
+        <label for="name">Nombre:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
 
-        <div class="mb-3">
-          <label for="email" class="form-label">Correo Electrónico</label>
-          <div class="input-group">
-            <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
-            <input type="email" class="form-control" id="email" name="email" placeholder="nombre@ejemplo.com" required>
-          </div>
-        </div>
+        <label for="email">Correo Electrónico:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
 
-        <div class="mb-3">
-          <label for="phone" class="form-label">Teléfono de Contacto</label>
-          <div class="input-group">
-            <span class="input-group-text"><i class="bi bi-telephone-fill"></i></span>
-            <input type="tel" class="form-control" id="phone" name="phone" placeholder="+56 9 XXXX XXXX">
-          </div>
-        </div>
+        <label for="message">Mensaje:</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea><br /><br />
 
-        <div class="mb-3">
-          <label for="message" class="form-label">Mensaje</label>
-          <textarea class="form-control" id="message" name="message" rows="4" placeholder="Cuéntanos tu consulta..."
-            required></textarea>
-        </div>
-
-        <div class="form-check mb-3">
-          <input class="form-check-input" type="checkbox" id="emergency" name="emergency">
-          <label class="form-check-label" for="emergency">
-            Tengo una Emergencia, necesito ser contactado a la brevedad
-          </label>
-        </div>
-
-        <button type="submit" class="btn btn-success w-100">Enviar</button>
+        <button type="submit">Enviar</button>
       </form>
     </section>
-<section class="mapa-banner w-100 mt-5">
-  <h2 class="text-center mb-3">Ubicación</h2>
-  <p class="text-center mb-4 fs-6 text-muted">
-    Puedes visitarnos en nuestra oficina. Encuéntranos en el siguiente mapa.
-  </p>
-  <div class="mapa-container">
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.7549320328585!2d-70.59367232572801!3d-33.45569079777802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cfb8cf85d909%3A0x8ebbd8c2b3143a70!2sLos%20Talaveras%2045%2C%207760068%20%C3%91u%C3%B1oa%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1752179413397!5m2!1ses!2scl" 
-      style="border:0;" 
-      allowfullscreen="" 
-      loading="lazy" 
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-  </div>
-</section>
+    <div class="whatsapp"><img src="./img/whatsap_verde.png" alt=""></div>
     <section class="Marcas">
       <h2>Nuestras Marcas y Socios</h2>
       <div class="marquee-container">
