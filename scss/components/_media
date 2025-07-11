@@ -1,0 +1,13 @@
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.servicio-card img {
+  object-fit: cover;
+  height: 280px;
+  width: 100%;
+  border-radius: 8px;
+
+}
